@@ -1,6 +1,9 @@
 $(function(){
     
-    var justePrix = 89; // je stock dans la variable chiffreUser la valeur à trouver par l'utilisateur
+    var maxNumber = 100;
+    var minNumber = 1;  
+    var justePrix = Math.floor(Math.random() * (maxNumber + 1) + minNumber); // je stock dans la variable chiffreUser la valeur à trouver par l'utilisateur
+    console.log(justePrix)
 
     $('#Button_validate').click(function(){
         var chiffreUser = $('#nb').val(); //je stock dans la variable chiffreUser la valeur rentré par l'utilisateur
