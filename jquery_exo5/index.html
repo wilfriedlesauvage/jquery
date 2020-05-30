@@ -19,7 +19,12 @@
   <script src="assets/js/jquery-3.2.1.js"></script>
 
   <script>
-  $('li').css({"color": "red"});
+
+    $(function(){
+       //$('li').css({"color": "red"});
+
+       $('ul').children().css('color', 'red');
+    });
   </script>
 
 </body>
